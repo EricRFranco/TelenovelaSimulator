@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlotCard : MonoBehaviour
+[CreateAssetMenu(fileName = "Plot Card", menuName = "Cards/Plot", order = 2)]
+public class PlotCard : CardScriptable
 {
     [SerializeField]
-    private int _charactersRequired;
+    private int _charactersRequired = 0;
 
     public int charactersRequired
     {

@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Generic Card", menuName = "Cards/Generic", order = 1)]
 public class CardScriptable : ScriptableObject
 {
     [SerializeField]
-    private string _title;
+    private string _title = "";
     [SerializeField]
-    private string _subtitle;
+    private string _subtitle = "";
     [SerializeField]
     [TextArea]
-    private string _flavorText;
+    private string _flavorText = "";
     [SerializeField]
-    private KeyValuePair<CardType, CardType> _cardTypes;
+    private CardType[] _cardTypes = null;
     [SerializeField]
-    private int _cardPrice;
+    private int _cardPrice = 0;
     
     public string title
     {
@@ -37,7 +36,7 @@ public class CardScriptable : ScriptableObject
         get { return _cardPrice; }
     }
 
-    public KeyValuePair<CardType, CardType> cardTypes
+    public CardType[] cardTypes
     {
         get { return _cardTypes; }
     }
@@ -49,5 +48,6 @@ public enum CardType
     Confrontational,
     Violent,
     Chisme,
+    Expository,
     None
 }
