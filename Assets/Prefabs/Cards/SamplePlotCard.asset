@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6ca2567052b372418a2e6f3c05b716b, type: 3}
   m_Name: SamplePlotCard
   m_EditorClassIdentifier: 
-  _title: 
-  _subtitle: 
-  _flavorText: 
+  _title: Sample
+  _subtitle: Sub-Sample
+  _flavorText: 'I am a plot card! I''m going to '
+  _cardTypes: 
   _cardPrice: 0
   _charactersRequired: 0

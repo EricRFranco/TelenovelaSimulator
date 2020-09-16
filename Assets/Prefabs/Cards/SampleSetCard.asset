@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d25d5522c61cf904381af8d2edeb58d4, type: 3}
   m_Name: SampleSetCard
   m_EditorClassIdentifier: 
-  _title: 
-  _subtitle: 
-  _flavorText: 
-  _cardPrice: 0
+  _title: Sample
+  _subtitle: Sub-Sample
+  _flavorText: This is a sample set! If you're reading this and past the prototyping
+    phase, I shouldn't exist!
+  _cardTypes: 0400000005000000
+  _cardPrice: 2000
   _setIllustration: {fileID: 0}
