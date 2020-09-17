@@ -12,6 +12,7 @@ public class GlobalUIManager : MonoBehaviour
     public Text subtitleText;
     public Text flavorText;
     public Text priceText;
+
     // Start is called before the first frame update
     void Start()
     {
