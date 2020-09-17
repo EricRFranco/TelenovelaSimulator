@@ -36,4 +36,9 @@ public class GlobalUIManager : MonoBehaviour
         priceText.text = "$" + card.cardPrice.ToString() + ".00";
         cardPanel.SetActive(true);
     }
+
+    public void DisableCardPanel()
+    {
+        cardPanel.SetActive(false);
+    }
 }
