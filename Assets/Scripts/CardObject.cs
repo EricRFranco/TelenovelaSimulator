@@ -22,4 +22,9 @@ public class CardObject : MonoBehaviour
     {
         
     }
+
+    private void OnMouseDown()
+    {
+        GlobalUIManager.instance.PopulateCardPanel(this.cardData);
+    }
 }
