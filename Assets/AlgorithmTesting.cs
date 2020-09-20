@@ -12,7 +12,8 @@ public class AlgorithmTesting : MonoBehaviour
         {
             print("Total Audience: " + algorithm.getTotalAudience());
             print("Rating: " + algorithm.getRating());
-            print("Income: "+ algorithm.getIncome());
+            print("Income: " + algorithm.getIncome());
         }
     }
 }
+

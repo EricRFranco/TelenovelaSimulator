@@ -10,7 +10,7 @@ public class Algorithm : MonoBehaviour
     public  SceneContainer[] currentScenes;
     public DataStorage dataC; // Short for dataContainer.
     int TotalAudience;
-    float multiplier;
+    public float multiplier;
 
     public int getTotalAudience() 
     {

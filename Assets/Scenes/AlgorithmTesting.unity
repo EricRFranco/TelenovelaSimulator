@@ -168,8 +168,8 @@ MonoBehaviour:
   neutralBonus: 0.9
   setBonus: 1
   currentEpisode: 1
-  audienceToIncome: 0.5
-  audienceToRating: 20
+  audienceToIncome: 0.7
+  audienceToRating: 5
   episodeBonus:
   - 3
   - 2.5
