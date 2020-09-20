@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GlobalUIManager : MonoBehaviour
+public class CardUIManager : MonoBehaviour
 {
-    public static GlobalUIManager instance = null;
+    public static CardUIManager instance = null;
     [Header("Card Panel Elements")]
     public GameObject cardPanel;
     public Text titleText;
@@ -20,7 +20,6 @@ public class GlobalUIManager : MonoBehaviour
             instance = this;
         else
             Destroy(this);
-        //DontDestroyOnLoad(this);
     }
 
     // Update is called once per frame
@@ -42,4 +41,5 @@ public class GlobalUIManager : MonoBehaviour
     {
         cardPanel.SetActive(false);
     }
+
 }
