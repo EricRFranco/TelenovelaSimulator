@@ -1499,6 +1499,36 @@ MonoBehaviour:
   _characterPanel: {fileID: 2019899149}
   _plotPanel: {fileID: 779734180}
   _backButton: {fileID: 932089377}
+  RandomizedSetCards:
+  - {fileID: 11400000, guid: 1aa4e076299151140a06ad33cc2ae3f1, type: 2}
+  - {fileID: 11400000, guid: cdb28ea1dfddd0d44810c4d6710c17a6, type: 2}
+  - {fileID: 11400000, guid: 4d6613ca41bc7eb4b9ee7226eab2bd38, type: 2}
+  - {fileID: 11400000, guid: 46baae1805b230248a88d9aeda186c8c, type: 2}
+  - {fileID: 11400000, guid: d1ec78b074fe78443851b6dcacb82573, type: 2}
+  - {fileID: 11400000, guid: d02d4e62973af7f449e6053ad3195433, type: 2}
+  RandomizedCharacterCards:
+  - {fileID: 11400000, guid: 709e7888566cec449832ad70b500b64e, type: 2}
+  - {fileID: 11400000, guid: 63164210917e24a4d9c697b643a4e81f, type: 2}
+  - {fileID: 11400000, guid: c5be956c8183744428586f66c9807f8e, type: 2}
+  - {fileID: 11400000, guid: 37155645f208aaa448c7024d0ed1808c, type: 2}
+  - {fileID: 11400000, guid: b226e05f5d85dd84baa466a9518a7abe, type: 2}
+  - {fileID: 11400000, guid: 4f3dbf55e547aa7489a6eb9a6956f78a, type: 2}
+  RandomizedPlotCards:
+  - {fileID: 11400000, guid: 0cb1ce254dce1bb45a9ee8babd2a6a0f, type: 2}
+  - {fileID: 11400000, guid: 553716aa424b0d342bb13228a6cb6824, type: 2}
+  - {fileID: 11400000, guid: cb617578def33164daf188626c3ec434, type: 2}
+  - {fileID: 11400000, guid: cd1ff481f6208554295d8d51e58ecfd9, type: 2}
+  - {fileID: 11400000, guid: 9a7b44911090aae448b0988bbd86a7d2, type: 2}
+  - {fileID: 11400000, guid: c8f9cbc524c913a418bd0f35a604d517, type: 2}
+  cardUIPrefab: {fileID: 1756874382148326290, guid: 3e58fd476533cd64fb97deaf7967cb3a, type: 3}
+  panels:
+  - {fileID: 2135534830}
+  - {fileID: 2019899149}
+  - {fileID: 779734180}
+  initialXPos: -185
+  initialYPos: 82
+  xOffset: 185
+  yOffset: -155
 --- !u!4 &1190455149
 Transform:
   m_ObjectHideFlags: 0
