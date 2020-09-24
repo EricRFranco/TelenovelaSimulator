@@ -16,6 +16,6 @@ MonoBehaviour:
   _subtitle: Sub-Sample
   _flavorText: This is a sample set! If you're reading this and past the prototyping
     phase, I shouldn't exist!
-  _cardTypes: 0400000005000000
+  _cardTypes: 00000000
   _cardPrice: 2000
   _setIllustration: {fileID: 0}
