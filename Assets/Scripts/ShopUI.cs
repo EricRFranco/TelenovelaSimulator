@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopUI : MonoBehaviour
 {
@@ -15,13 +16,54 @@ public class ShopUI : MonoBehaviour
     [SerializeField]
     private GameObject _backButton = null;
 
-    // Start is called before the first frame update
+    // Lets assume that the characters, sets, and plots to spawn are stored in respective lists. 
+    // Variables just for testing:  
+    public SetCard[] RandomizedSetCards;
+    public CharacterCard[] RandomizedCharacterCards;
+    public PlotCard[] RandomizedPlotCards;
+    public GameObject cardUIPrefab;
+    public GameObject[] panels;
+    public float initialXPos;
+    public float initialYPos;
+    public float xOffset;
+    public float yOffset;
     void Start()
     {
-        
+        createCards(0, RandomizedSetCards);
+        createCards(1, RandomizedCharacterCards);
+        createCards(2, RandomizedPlotCards);
     }
 
-    // Update is called once per frame
+    void createCards(int c, CardScriptable[] toSpawn) 
+    {
+        float xPos = initialXPos;
+        float yPos = initialYPos;
+        for (int i = 0; i < 6; i++)
+        {
+            GameObject newCard = Instantiate(cardUIPrefab, panels[c].transform);
+            if (i == 3) {
+                yPos = yPos + yOffset;
+                xPos = initialXPos;
+            }
+            newCard.transform.localPosition = new Vector2(xPos, yPos);
+            xPos = xPos + xOffset;
+            GameObject cardTitle = newCard.transform.GetChild(0).gameObject;
+            cardTitle.GetComponent<Text>().text = toSpawn[i].title;
+            GameObject cardSubtitle = newCard.transform.GetChild(1).gameObject;
+            cardSubtitle.GetComponent<Text>().text = toSpawn[i].subtitle;
+            GameObject cardFlavor = newCard.transform.GetChild(2).gameObject;
+            cardSubtitle.GetComponent<Text>().text = toSpawn[i].flavorText;
+            /*if (toSpawn[i].GetType() == RandomizedCharacterCards.GetType() || toSpawn[i].GetType() == RandomizedSetCards.GetType()) 
+            {
+                GameObject cardImage = newCard.transform.GetChild(3).gameObject;
+                cardSubtitle.GetComponent<Image>().sprite = toSpawn[i].set;
+            } CODE FOR GETTING THE IMAGE */
+
+
+        }
+     
+    }
+    
     void Update()
     {
         UpdateFundsText();
@@ -51,7 +93,7 @@ public class ShopUI : MonoBehaviour
         _characterPanel.SetActive(true);
         _backButton.SetActive(true);
         _mainMenu.SetActive(false);
-    }
+    } 
 
     public void OpenPlotPanel()
     {
@@ -75,4 +117,5 @@ public class ShopUI : MonoBehaviour
     {
 
     }
+
 }
