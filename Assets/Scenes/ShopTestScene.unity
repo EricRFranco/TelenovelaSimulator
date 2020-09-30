@@ -1499,6 +1499,7 @@ MonoBehaviour:
   _characterPanel: {fileID: 2019899149}
   _plotPanel: {fileID: 779734180}
   _backButton: {fileID: 932089377}
+<<<<<<< HEAD
   RandomizedSetCards:
   - {fileID: 11400000, guid: 1aa4e076299151140a06ad33cc2ae3f1, type: 2}
   - {fileID: 11400000, guid: cdb28ea1dfddd0d44810c4d6710c17a6, type: 2}
@@ -1529,6 +1530,8 @@ MonoBehaviour:
   initialYPos: 82
   xOffset: 185
   yOffset: -155
+=======
+>>>>>>> ShopUI
 --- !u!4 &1190455149
 Transform:
   m_ObjectHideFlags: 0
@@ -1537,7 +1540,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190455147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: 530.1749, y: 207.73009, z: -32.163002}
+>>>>>>> ShopUI
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1704,7 +1711,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351359603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: 530.1749, y: 207.73009, z: -32.163002}
+>>>>>>> ShopUI
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
