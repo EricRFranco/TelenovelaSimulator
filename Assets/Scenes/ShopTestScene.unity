@@ -730,6 +730,61 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580856640}
   m_CullTransparentMesh: 0
+--- !u!1 &593088569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593088571}
+  - component: {fileID: 593088570}
+  m_Layer: 0
+  m_Name: CardStorage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &593088570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593088569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e8eb5240f0d1d41952f42c71673bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allSets:
+  - {fileID: 11400000, guid: b7f7a10c960840e43a620f86739a6367, type: 2}
+  - {fileID: 11400000, guid: c810cbd095307cc4a88748461866f013, type: 2}
+  - {fileID: 11400000, guid: e52dde23e03a3e74cb9114af0ff18128, type: 2}
+  allPlots:
+  - {fileID: 11400000, guid: 5f9373632ebc3da448b4df34b63830ea, type: 2}
+  - {fileID: 11400000, guid: 1301c22c3f50b88418045990878029a5, type: 2}
+  - {fileID: 11400000, guid: db9d3d06ad6adbf4eb71c93cbfae15ee, type: 2}
+  allCharacters:
+  - {fileID: 11400000, guid: 34fb7030690e61a429c7b06d70abe008, type: 2}
+  - {fileID: 11400000, guid: 847f7e80d1a0e2840a4701fc0bd825b4, type: 2}
+  - {fileID: 11400000, guid: 70ec73f58524ac54f978655ae06280f4, type: 2}
+--- !u!4 &593088571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593088569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 530.1749, y: 207.73009, z: -32.163002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &773768591
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,36 +1554,15 @@ MonoBehaviour:
   _characterPanel: {fileID: 2019899149}
   _plotPanel: {fileID: 779734180}
   _backButton: {fileID: 932089377}
-  RandomizedSetCards:
-  - {fileID: 11400000, guid: 1aa4e076299151140a06ad33cc2ae3f1, type: 2}
-  - {fileID: 11400000, guid: cdb28ea1dfddd0d44810c4d6710c17a6, type: 2}
-  - {fileID: 11400000, guid: 4d6613ca41bc7eb4b9ee7226eab2bd38, type: 2}
-  - {fileID: 11400000, guid: 46baae1805b230248a88d9aeda186c8c, type: 2}
-  - {fileID: 11400000, guid: d1ec78b074fe78443851b6dcacb82573, type: 2}
-  - {fileID: 11400000, guid: d02d4e62973af7f449e6053ad3195433, type: 2}
-  RandomizedCharacterCards:
-  - {fileID: 11400000, guid: 709e7888566cec449832ad70b500b64e, type: 2}
-  - {fileID: 11400000, guid: 63164210917e24a4d9c697b643a4e81f, type: 2}
-  - {fileID: 11400000, guid: c5be956c8183744428586f66c9807f8e, type: 2}
-  - {fileID: 11400000, guid: 37155645f208aaa448c7024d0ed1808c, type: 2}
-  - {fileID: 11400000, guid: b226e05f5d85dd84baa466a9518a7abe, type: 2}
-  - {fileID: 11400000, guid: 4f3dbf55e547aa7489a6eb9a6956f78a, type: 2}
-  RandomizedPlotCards:
-  - {fileID: 11400000, guid: 0cb1ce254dce1bb45a9ee8babd2a6a0f, type: 2}
-  - {fileID: 11400000, guid: 553716aa424b0d342bb13228a6cb6824, type: 2}
-  - {fileID: 11400000, guid: cb617578def33164daf188626c3ec434, type: 2}
-  - {fileID: 11400000, guid: cd1ff481f6208554295d8d51e58ecfd9, type: 2}
-  - {fileID: 11400000, guid: 9a7b44911090aae448b0988bbd86a7d2, type: 2}
-  - {fileID: 11400000, guid: c8f9cbc524c913a418bd0f35a604d517, type: 2}
-  cardUIPrefab: {fileID: 1756874382148326290, guid: 3e58fd476533cd64fb97deaf7967cb3a, type: 3}
-  panels:
-  - {fileID: 2135534830}
-  - {fileID: 2019899149}
-  - {fileID: 779734180}
-  initialXPos: -185
-  initialYPos: 82
-  xOffset: 185
-  yOffset: -155
+  RandomizedSetCards: []
+  RandomizedCharacterCards: []
+  RandomizedPlotCards: []
+  cardUIPrefab: {fileID: 0}
+  panels: []
+  initialXPos: 0
+  initialYPos: 0
+  xOffset: 0
+  yOffset: 0
 --- !u!4 &1190455149
 Transform:
   m_ObjectHideFlags: 0

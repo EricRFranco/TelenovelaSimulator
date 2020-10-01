@@ -12,9 +12,9 @@ public class deckManager : MonoBehaviour
     void Start()
     {
         LoadAllPlots();
-        if (player.playerPlots().Count < playerHand + 1)
+        if (player.playerPlots.Count < playerHand + 1)
         {
-            int boughtCards = player.playerPlots().Count;
+            int boughtCards = player.playerPlots.Count;
             GenerateRandomCards(boughtCards);
         }
     }
@@ -39,7 +39,7 @@ public class deckManager : MonoBehaviour
         PlotCard[] newHand = new PlotCard[playerHand];
         for (int y = x; y <= x; y++) 
         {
-            newHand[y - x] = player.playerPlots().ElementAt<PlotCard>(y - x);
+            newHand[y - x] = player.playerPlots[y - x];
         }
         for (int t = x; t <= playerHand; t++) 
         {
