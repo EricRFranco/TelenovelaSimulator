@@ -13,6 +13,8 @@ public class PlayerManager : MonoBehaviour
     public List<CharacterCard> characterCards = new List<CharacterCard>();
     public List<PlotCard> plotCards = new List<PlotCard>();
 
+    public ScriptWritingUI scriptUIManager;
+
     public float totalMoney = 0f;
 
     private void Awake()
@@ -23,33 +25,36 @@ public class PlayerManager : MonoBehaviour
             Destroy(this);
         DontDestroyOnLoad(this.gameObject);
         AddStarterCards();
-    }
-
-    void Update()
-    {
-
+        scriptUIManager.LoadUI();
     }
 
     public List<PlotCard> playerPlots
     {
         get { return plotCards; }   
     }
-
-    void AddStarterCards()
+    public List<SetCard> playerSets
     {
-        SetCard[] starterSets = Resources.LoadAll<SetCard>("Assets / Prefabs / Cards / Sets / Starter");
-        PlotCard[] starterPlot = Resources.LoadAll<PlotCard>("Assets / Prefabs / Cards / Plot / Starter");
-        CharacterCard[] starterChar = Resources.LoadAll<CharacterCard>("Assets / Prefabs / Cards / Character / Starter");
+        get { return setCards; }
+    }
+    public List<CharacterCard> playerChars
+    {
+        get { return characterCards; }
+    }
+    public void AddStarterCards()
+    {
+        List<SetCard> starterSets = CardStorage.instance.starterSets;
+        List<PlotCard> starterPlot = CardStorage.instance.starterPlots; ;
+        List<CharacterCard> starterChar = CardStorage.instance.starterCharacters;
 
-        for (int i = 0; i < starterSets.Length; i++)
+        for (int i = 0; i < starterSets.Count; i++)
         {
             setCards.Add(starterSets[i]);
         }
-        for (int i = 0; i < starterPlot.Length; i++)
+        for (int i = 0; i < starterPlot.Count; i++)
         {
             plotCards.Add(starterPlot[i]);
         }
-        for (int i = 0; i < starterChar.Length; i++)
+        for (int i = 0; i < starterChar.Count; i++)
         {
             characterCards.Add(starterChar[i]);
         }

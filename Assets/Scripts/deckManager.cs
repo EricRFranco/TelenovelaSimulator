@@ -11,12 +11,12 @@ public class deckManager : MonoBehaviour
     public int playerHand = 5; // We can dinamically change this in runtime, but for the demo it's fine to just set it at 5 manually.
     void Start()
     {
-        LoadAllPlots();
+        /*LoadAllPlots();
         if (player.playerPlots.Count < playerHand + 1)
         {
             int boughtCards = player.playerPlots.Count;
             GenerateRandomCards(boughtCards);
-        }
+        }*/
     }
 
     void LoadAllPlots()

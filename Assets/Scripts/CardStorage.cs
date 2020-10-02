@@ -10,7 +10,9 @@ public class CardStorage : MonoBehaviour
     public List<PlotCard> allPlots = new List<PlotCard>();
     public List<CharacterCard> allCharacters = new List<CharacterCard>();
 
-    // Start is called before the first frame update
+    public List<SetCard> starterSets = new List<SetCard>();
+    public List<PlotCard> starterPlots = new List<PlotCard>();
+    public List<CharacterCard> starterCharacters = new List<CharacterCard>();
     void Awake()
     {
         if (instance == null)
@@ -18,11 +20,5 @@ public class CardStorage : MonoBehaviour
         else
             Destroy(this.gameObject);
         DontDestroyOnLoad(this.gameObject);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
