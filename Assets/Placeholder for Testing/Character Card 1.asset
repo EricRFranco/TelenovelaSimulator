@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a05982e4ca5ef4bbb71af588071e60, type: 3}
   m_Name: Character Card 1
   m_EditorClassIdentifier: 
-  _title: 1
+  _title: The Narrator
   _subtitle: 111111111
-  _flavorText: ASDASDASDASDSAD
+  _flavorText: 
   _cardTypes: 
   _cardPrice: 500
+  _startingMorale: 30
+  _actorName: Pepe
+  _traits: []
